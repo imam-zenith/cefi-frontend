@@ -1,0 +1,102 @@
+$qr-code--arrow-size: 0.5rem;
+$qr-code--arrow-color: $colors-main-black;
+$qr-text--pading: 0.25rem;
+$qr-code--size: 12rem;
+
+.extra_information-wrapper {
+	margin-top: 1rem;
+	padding: 0.5rem;
+	font-size: $font-size-subtext;
+
+	.link {
+		color: $colors-notifications-blue;
+		padding: 0 $qr-text--pading;
+	}
+}
+
+.margin-aligner {
+	margin-bottom: 24px;
+	margin-right: 1rem;
+
+	& svg {
+		width: 30px !important;
+		height: 30px !important;
+	}
+}
+
+.deposit_info-wrapper > div {
+	flex: 1;
+}
+
+.qr_code-wrapper {
+	margin: 0.5rem;
+	$qr-code-margin: 1rem;
+	width: $qr-code--size;
+	max-width: $qr-code--size;
+	.qr-code-bg {
+		background-color: white;
+		margin: $qr-code-margin;
+		> *:first-child {
+			@include size-important($qr-code--size - $qr-code-margin);
+		}
+	}
+}
+
+.deposit_info-qr-wrapper {
+	$qr-code-margin: 1rem;
+	.qr-text {
+		text-align: center;
+		display: flex;
+		font-size: $font-size-subtext;
+		padding: 1.5rem 0;
+		margin-left: $qr-code-margin;
+		max-width: 20rem;
+	}
+
+	.qr-title {
+		font-size: 1.5rem;
+	}
+}
+
+.review-wrapper {
+	min-width: $bp-xs;
+
+	.review-section {
+		font-size: $font-size-subtext;
+	}
+
+	.review-title {
+		font-size: $font-size-subhead2;
+		margin-bottom: 0.5rem;
+	}
+
+	.separator {
+		margin: 1rem 0;
+		height: 2px;
+		width: 100%;
+		background-color: $colors-deactivate-color2;
+	}
+}
+
+.verification-wrapper {
+	.verification-content-wrapper {
+		position: relative;
+	}
+	.error {
+		font-size: $font-size-subhead2;
+	}
+	.block-wrapper {
+		margin: 1rem;
+	}
+}
+
+.form_currency-ball {
+	width: 30px;
+	height: 30px;
+}
+
+.multiple-actions-wrapper {
+	.mini-qr {
+		fill: $link;
+	}
+}
